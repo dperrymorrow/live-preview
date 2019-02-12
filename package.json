@@ -1,0 +1,29 @@
+{
+  "name": "live-preview",
+  "version": "1.0.0",
+  "description": "edit with a textarea while a div shows your preview",
+  "main": "src/lib/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "boost serve",
+    "build": "boost build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dperrymorrow/live-preview.git"
+  },
+  "keywords": [
+    "editor"
+  ],
+  "author": "David Morrow",
+  "license": "MIT",
+  "devDependencies": {
+    "dev-boost": "^1.1.1",
+    "eslint": "^5.13.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}

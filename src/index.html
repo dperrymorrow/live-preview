@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <title>Example Live preview</title>
+  <link href="/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.js"></script>
+</head>
+
+<body>
+
+  <textarea id="editor" class="editor">
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+
+
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+
+
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+
+
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+
+
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+
+function _cloneEditorStyles($editor, $preview) {
+  const blackList = ["color"];
+  const cssStyles = window.getComputedStyle($editor, null);
+
+  Array.from(cssStyles).forEach(key => {
+    const value = cssStyles.getPropertyValue(key);
+    if (!(key in styles.preview) && !["none", "auto"].includes(value) && !(blackList.includes(key)) ) {
+      $preview.style.setProperty(key, value, cssStyles.getPropertyPriority(key));
+    }
+  });
+}
+  </textarea>
+
+  <script type="module">
+    import LivePreview from "/lib/index.js";
+    const editor = LivePreview({
+      textarea: document.getElementById("editor"),
+      format: text => Prism.highlight(text, Prism.languages.javascript, 'javascript')
+    });
+  </script>
+</body>
+</html>
